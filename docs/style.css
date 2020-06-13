@@ -6,10 +6,12 @@ html, body {
 div#wrapper {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin: 0 20px;
+  height: 2000px;
+  border: dashed 20px gray;
 }
 
-div#small {
+div#small-gear {
   display: flex;
   width: 245.6px;
   height: 245.6px;
@@ -19,9 +21,10 @@ div#small {
   color: white;
   font-size: 30px;
   font-weight: bold;
+  top: -150px;
 }
 
-div#large {
+div#large-gear {
   display: flex;
   width: 342.4px;
   height: 342.4px;
@@ -31,4 +34,5 @@ div#large {
   color: white;
   font-size: 30px;
   font-weight: bold;
+  top: -150px;
 }
