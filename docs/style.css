@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+div#wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+div#small {
+  display: flex;
+  width: 245.6px;
+  height: 245.6px;
+  justify-content: center;
+  align-items: center;
+  background: url('./images/small-gear.svg') center no-repeat;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+div#large {
+  display: flex;
+  width: 342.4px;
+  height: 342.4px;
+  justify-content: center;
+  align-items: center;
+  background: url('./images/large-gear.svg') center no-repeat;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
