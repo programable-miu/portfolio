@@ -5,7 +5,7 @@ $(function () {
     triggerElement: '#wrapper',
     duration: 6000,
   })
-  .setTween(TweenMax.to('#small-gear', 1, { rotation: 600, ease: Linear.easeNone }))
+  .setTween(TweenMax.to('#small-gear', 1, { rotation: -600, ease: Linear.easeNone }))
   .setPin('#small-gear')
   .addTo(controller)
 
@@ -13,8 +13,21 @@ $(function () {
     triggerElement: '#wrapper',
     duration: 6000,
   })
-  .setTween(TweenMax.to('#large-gear', 1, { rotation: -400, ease: Linear.easeNone }))
+  .setTween(TweenMax.to('#large-gear', 1, { rotation: 400, ease: Linear.easeNone }))
   .setPin('#large-gear')
+  .addTo(controller)
+
+  new ScrollMagic.Scene({
+    triggerElement: '#wrapper',
+    duration: 6000,
+  })
+  .on('progress', function (e) {
+    const progress = e.progress
+    const posi = (progress * 100) + '%'
+    const nega = (100 - progress * 100) + '%'
+    $('#milkyway-image-container').css('background-position', nega + ' ' + posi)
+    $('#planet-image-container').css('background-position', 'center ' + posi)
+  })
   .addTo(controller)
 
   const setActive = (headline, content, offset, duration) => {

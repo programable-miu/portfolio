@@ -5,7 +5,7 @@ html, body {
 
 body {
   font-family: arial, sans-serif;
-  background-color: #777;
+  background-color: #fff;
   color: #777;
   font-weight: bold;
 }
@@ -85,4 +85,28 @@ div.headline, div.content {
 div.active {
   opacity: 1;
   visibility: visible;
+}
+
+div#milkyway-image-container {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background-image: url('./images/milkyway.jpg');
+  background-repeat: no-repeat;
+  background-size: 720px 960px;
+  background-position: 0% 100%;
+  left: calc(50% - 300px);
+  top: calc(50% - 300px);
+}
+
+div#planet-image-container {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: url('./images/planet.png') ;
+  background-repeat: no-repeat;
+  background-size: 600px 900px;
+  background-position: center 0%;
+  left: calc(50% - 300px);
+  top: calc(50% - 300px);
 }
