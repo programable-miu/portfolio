@@ -19,25 +19,25 @@ a:hover, a:active {
 }
 
 div#wrapper {
-  height: 2000px;
+  height: 6000px;
 }
 
 div#small-gear {
   width: 200px;
   height: 200px;
   background: url('./images/small-gear.svg') center no-repeat;
-  position: absolute;
+  position: fixed;
   left: calc(50% - 100px - 100px);
-  top: calc(-100px - 125px);
+  top: calc(50% - 100px - 125px);
 }
 
 div#large-gear {
   width: 300px;
   height: 300px;
   background: url('./images/large-gear.svg') center no-repeat;
-  position: absolute;
+  position: fixed;
   left: calc(50% - 150px + 50px);
-  top: calc(-150px + 75px);
+  top: calc(50% - 150px + 75px);
 }
 
 div.headline {
@@ -66,4 +66,23 @@ div.content {
 
 div#myself-headline {
   font-size: 40px;
+}
+
+div#product-1-headline, div#product-1-content {
+}
+
+div.headline, div.content {
+  -webkit-transition: visibility .5s ease;
+  -moz-transition: visibility .5s ease;
+  transition: visibility .5s ease;
+  -webkit-transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+div.active {
+  opacity: 1;
+  visibility: visible;
 }
