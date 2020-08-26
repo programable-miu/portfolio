@@ -3,7 +3,7 @@ $(function () {
 
   new ScrollMagic.Scene({
     triggerElement: '#wrapper',
-    duration: 6000,
+    duration: 7000,
   })
   .setTween(TweenMax.to('#small-gear', 1, { rotation: -600, ease: Linear.easeNone }))
   .setPin('#small-gear')
@@ -11,7 +11,7 @@ $(function () {
 
   new ScrollMagic.Scene({
     triggerElement: '#wrapper',
-    duration: 6000,
+    duration: 7000,
   })
   .setTween(TweenMax.to('#large-gear', 1, { rotation: 400, ease: Linear.easeNone }))
   .setPin('#large-gear')
@@ -19,7 +19,7 @@ $(function () {
 
   new ScrollMagic.Scene({
     triggerElement: '#wrapper',
-    duration: 6000,
+    duration: 7000,
   })
   .on('progress', function (e) {
     const progress = e.progress
@@ -63,5 +63,6 @@ $(function () {
  setActive('#myself-headline', '#myself-content', 0, 2000)
  setActive('#product-1-headline', '#product-1-content', 2000, 1000)
  setActive('#product-2-headline', '#product-2-content', 3000, 1000)
- setActive('#last-headline', '#last-content', 4000, 2000)
+ setActive('#product-3-headline', '#product-3-content', 4000, 1000)
+ setActive('#last-headline', '#last-content', 5000, 2000)
 })
